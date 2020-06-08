@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <h3 class="client-details">Client/Visitor Contact Tracing  COVID-19</h3>
+                <input type="text" placeholder="name"/>
+                <input type="text" placeholder="surname"/>
+                <input type="text" placeholder="emplyee number"/>
+                <input type="text" placeholder="id"/>
+                <input type="text" placeholder="home address"/>
+                <input type="text" placeholder="number"/>
+                <input type="text" placeholder="email id"/>
+                <input type="text" placeholder="perpose of access"/>
+                <input type="text" placeholder="business unit"/>
+                <input type="text" placeholder="syptoms"/>
+                <input type="text" placeholder="temprature "/>
+                <button>Create</button>
+                <p class="message">Already Registered? <a href="#">Login</a>
+                </p>
+            </form>
+
+            <form class="login-form">
+                <input type="text" placeholder="user name"/>
+                <input type="password" placeholder="password"/>
+                <button>Login</button>
+                <p class="message">Not Registered? <a href="#">Register</a>
+
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'>
+    </script>
+
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+    
+</body>
+</html>
